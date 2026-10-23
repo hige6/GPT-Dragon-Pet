@@ -1,0 +1,15 @@
+﻿{
+  "version": 1,
+  "characters": [
+    {
+      "id": "gpt-dragon",
+      "name": "龙娘1",
+      "file": "gpt-dragon-niang-bust.png"
+    },
+    {
+      "id": "dragon-v5",
+      "name": "Q版龙娘 v5（动画）",
+      "file": "dragon-v5/idle.png"
+    }
+  ]
+}

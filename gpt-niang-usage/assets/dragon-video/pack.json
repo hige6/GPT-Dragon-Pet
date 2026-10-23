@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "fps": 12,
+  "width": 512,
+  "height": 512,
+  "default": "idle",
+  "states": {
+    "idle": "idle",
+    "working": "thinking",
+    "waiting": "thinking",
+    "success": "success",
+    "failure": "atlas",
+    "review": "thinking"
+  },
+  "notes": {
+    "working": "复用托腮思考素材",
+    "waiting": "暂借思考素材，非专门等待动作",
+    "failure": "使用原 v5 失败图集",
+    "review": "复用思考素材"
+  },
+  "clips": {
+    "idle": {
+      "label": "待机",
+      "directory": "idle",
+      "count": 157,
+      "fps": 12,
+      "loop": true,
+      "playback": "loop",
+      "returnTo": "idle",
+      "sourceFile": "Q版白发龙娘定妆图制作.mp4",
+      "sourceSha256": "1cda9930439e18e93dab537290c78bf949e1552fc3d0e520f58166178c6d4c45",
+      "anchor": [
+        256,
+        498
+      ],
+      "sourceTransform": {
+        "scale": 0.521870286576169,
+        "left": -146.95475113122177,
+        "top": 4.690799396681712
+      },
+      "bounds": [
+        136,
+        151,
+        377,
+        499
+      ],
+      "loopStart": 6,
+      "normalization": "512 canvas; common source scale 0.523; fixed foot anchor"
+    },
+    "success": {
+      "label": "得意庆祝",
+      "directory": "success",
+      "count": 121,
+      "fps": 12,
+      "loop": false,
+      "playback": "once",
+      "returnTo": "idle",
+      "sourceFile": "生成龙娘动作制作视频 (1).mp4",
+      "sourceSha256": "0568855e3aa75b7c256de5fdb7c7a9218de188600a1ade076aeff6c7413c9f05",
+      "anchor": [
+        256,
+        498
+      ],
+      "sourceTransform": {
+        "scale": 0.5226586102719033,
+        "left": -146.68277945619332,
+        "top": 6.2296072507552935
+      },
+      "bounds": [
+        139,
+        150,
+        428,
+        497
+      ],
+      "normalization": "512 canvas; common source scale 0.523; fixed foot anchor"
+    },
+    "click": {
+      "label": "傲娇回应",
+      "directory": "click",
+      "count": 121,
+      "fps": 12,
+      "loop": false,
+      "playback": "once",
+      "returnTo": "idle",
+      "sourceFile": "生成龙娘动作制作视频 (2).mp4",
+      "sourceSha256": "73bb9b2e0e30cfaf7f1a5eb2f01a563fd7828a9c0cdeca01ca35786d4aa272cc",
+      "anchor": [
+        256,
+        498
+      ],
+      "sourceTransform": {
+        "scale": 0.5258358662613982,
+        "left": -149.00455927051672,
+        "top": 5.06990881458961
+      },
+      "bounds": [
+        128,
+        152,
+        423,
+        499
+      ],
+      "normalization": "512 canvas; common source scale 0.523; fixed foot anchor"
+    },
+    "thinking": {
+      "label": "托腮思考",
+      "directory": "thinking",
+      "count": 69,
+      "fps": 12,
+      "loop": true,
+      "playback": "loop",
+      "returnTo": "idle",
+      "sourceFile": "生成龙娘动作制作视频 (3).mp4",
+      "sourceSha256": "a4e25308bab30c6a49158ca6f52ca6e2f07552d44a0ef7282ae6abb8e97f9054",
+      "anchor": [
+        256,
+        498
+      ],
+      "sourceTransform": {
+        "scale": 0.5258358662613982,
+        "left": -149.00455927051672,
+        "top": 5.06990881458961
+      },
+      "bounds": [
+        141,
+        150,
+        377,
+        499
+      ],
+      "loopStart": 6,
+      "normalization": "512 canvas; common source scale 0.523; fixed foot anchor"
+    },
+    "tsundere-strong": {
+      "label": "超级傲娇",
+      "directory": "tsundere-strong",
+      "count": 121,
+      "fps": 12,
+      "loop": false,
+      "playback": "once",
+      "returnTo": "idle",
+      "sourceFile": "超级傲娇.mp4",
+      "sourceSha256": "fda9393ec2c3bd2b6509d1f0da2d81956b9b0f68d63bf4423384789baab5a1a4",
+      "anchor": [
+        256,
+        498
+      ],
+      "sourceTransform": {
+        "scale": 0.4051222351571595,
+        "left": -71.12689173457511,
+        "top": 88.034924330617
+      },
+      "bounds": [
+        132,
+        149,
+        482,
+        498
+      ],
+      "sourceTopTouchFrames": 0,
+      "normalization": "512 canvas; common source scale 0.523; fixed foot anchor"
+    },
+    "rabbit-ears": {
+      "label": "兔耳装扮",
+      "directory": "rabbit-ears",
+      "count": 121,
+      "fps": 12,
+      "loop": false,
+      "playback": "once",
+      "returnTo": "idle",
+      "sourceFile": "兔儿.mp4",
+      "sourceSha256": "f647da333dac65f63b033a634afca3a80ca2a9fffd2163e5db2145d196b29824",
+      "anchor": [
+        256,
+        498
+      ],
+      "sourceTransform": {
+        "scale": 0.5106990014265336,
+        "left": -139.95435092724682,
+        "top": 11.999999999999943
+      },
+      "bounds": [
+        137,
+        133,
+        431,
+        498
+      ],
+      "sourceTopTouchFrames": 41,
+      "normalization": "512 canvas; common source scale 0.523; fixed foot anchor"
+    },
+    "scarf": {
+      "label": "围巾装扮",
+      "directory": "scarf",
+      "count": 121,
+      "fps": 12,
+      "loop": false,
+      "playback": "once",
+      "returnTo": "idle",
+      "sourceFile": "围巾.mp4",
+      "sourceSha256": "0261e7b80c21af58a3da6861f0a45a54e8006ee93c0c340ee73598aa689477e1",
+      "anchor": [
+        256,
+        498
+      ],
+      "sourceTransform": {
+        "scale": 0.5179640718562875,
+        "left": -144.15868263473055,
+        "top": 7.4251497005988085
+      },
+      "bounds": [
+        135,
+        142,
+        427,
+        497
+      ],
+      "sourceTopTouchFrames": 0,
+      "normalization": "512 canvas; common source scale 0.523; fixed foot anchor"
+    }
+  },
+  "displayReference": 384,
+  "displayAnchor": [
+    256,
+    498
+  ],
+  "previousAnchor": [
+    192,
+    370
+  ]
+}

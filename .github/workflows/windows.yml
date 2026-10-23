@@ -1,0 +1,34 @@
+name: Windows checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Node runtime tests
+        run: node --test --test-concurrency=1 gpt-niang-usage/tests/*.test.mjs
+      - name: WPF and launcher checks
+        shell: powershell
+        run: |
+          & tests/Run-Upstream-Checks.ps1
+          & tests/Verify-Frame-Cache.ps1
+          & tests/Verify-Dragon-Behavior.ps1
+          & tests/Verify-Test-Runner.ps1
+          & Build-Dragon.ps1
+      - name: Portable archive
+        run: python tools/package-portable.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GPT-Dragon-Pet-Windows-x64
+          path: |
+            dist/*.zip
+            dist/SHA256SUMS.txt
+            dist/PORTABLE-MANIFEST.json
