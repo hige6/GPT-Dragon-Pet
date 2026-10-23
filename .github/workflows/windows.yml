@@ -18,11 +18,11 @@ jobs:
       - name: WPF and launcher checks
         shell: powershell
         run: |
-          & tests/Run-Upstream-Checks.ps1
-          & tests/Verify-Frame-Cache.ps1
-          & tests/Verify-Dragon-Behavior.ps1
-          & tests/Verify-Test-Runner.ps1
-          & Build-Dragon.ps1
+          & .\tests\Run-Upstream-Checks.ps1
+          & .\tests\Verify-Frame-Cache.ps1
+          & .\tests\Verify-Dragon-Behavior.ps1
+          & .\tests\Verify-Test-Runner.ps1
+          & .\Build-Dragon.ps1
       - name: Portable archive
         run: python tools/package-portable.py
       - uses: actions/upload-artifact@v4
